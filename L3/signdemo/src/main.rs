@@ -19,6 +19,7 @@ fn main() -> Result<()> {
     println!("Public Key (Base64): {}\n", b64(&pk_bytes));
     println!("Secret Key (Base64): {}\n", b64(&sk_bytes));
 
+
     // 2) Loop: read a message, sign, and then verify
     loop {
         let msg = io::readline::read_line_prompt("New message to sign> ")?;
